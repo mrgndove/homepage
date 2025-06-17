@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Cassia';
+    src: url('Cassia.woff2') format('woff2'),
+        url('Cassia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    background-color:rgba(100,300,200,.5);
+    font-size: 20px;
+    font-family: "Bellota Text", sans-serif
+}
+
+p {
+                background-color:#008b8b;
+                padding:10px;
+                margin:30px;
+
+                border: 5px dotted #045a5a
+               
+            }
+
+            h1 {
+                color:navy;
+                border-bottom: 5px dashed;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+
+            h2 {
+                font-family: 'Barlow Text';
+            }
+            strong {
+                color:yellow;
+                text-decoration:underline;
+                font-family: "Bellota Text", sans-serif;
+                font-style:italic
+            }
+            /* img elements are in line by default */
+            img {
+                width: 700px;
+               max-width: 100%;
+            }
+
+            .special {
+                background-color:paleturquoise; 
+                border: 5px inset rgb(105, 178, 178);
+                font-style:italic;
+            }
+
+            /*
+            stylesheet specificity
+            external < embedded < inline
+            */
+
+            header{
+              margin:20px;
+              padding:10px;
+              width: 300px;
+              text-align: center;
+              
+              background-color:rgb(255, 187, 221);
+            }
+
+            /*
+            Identifier specificity
+            tag < class < id*/
+
+            main{
+              margin:20px;
+              padding:10px;
+              width: 300px;
+              text-align: center;
+
+              background-color:deeppink;
+
+            }
+
+            .class{
+                background-color:rgb(209, 249, 235);
+            }
+
+            #id {
+                background-color:#ffbbdd;
+            }
+
+            footer{
+              margin:20px;
+              padding:10px;
+              width: 300px;
+              text-align: center;
+              
+              background-color:ghostwhite;
+            }
+
+            footer{
+                background-color:rgb(251, 245, 159);
+            }
