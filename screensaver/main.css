@@ -1,0 +1,288 @@
+*{
+    box-sizing:border-box;
+}
+img {
+    max-width: 100%;
+}
+
+body{
+    background-color:violet;
+    animation: fade 30s infinite;
+    overflow: hidden;
+}
+
+p {
+    color: rgb(81, 51, 124);
+    position: relative;
+    top: -50vh;
+    left: 800px;
+    animation: fall 4s infinite;
+}
+
+.word {
+    color: rgb(236, 30, 233);
+    position: relative;
+    top: -48vh;
+    left: 400px;
+    animation: fall 6s infinite;
+}
+
+.secondword {
+    color: rgb(69, 131, 218);
+    position: relative;
+    top: -29vh;
+    left: 300px;
+    rotate:4deg;
+    animation: fall 3s infinite;
+}
+.sprinkle {
+    background-color: aliceblue;
+     width: 10vh;
+    height: 2.5vh;
+    border-radius: 25px;
+    position: relative;
+    top: -50vh;
+    animation: fall 3s infinite;
+    
+}
+
+.sprinklepink {
+    background-color: pink;
+    width: 10vh;
+    height: 2.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -20vh;
+    left: 50vh;
+    rotate: 3deg;
+    animation: fall 2.4s infinite;
+}
+
+.sprinkleblue {
+    background-color: rgb(139, 230, 255);
+    width: 10vh;
+    height: 2.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -20vh;
+    left: 90vh;
+    rotate: 10deg;
+    animation: fall 3s infinite;
+}
+
+.sprinkleyellow {
+    background-color: rgb(255, 252, 99);
+    width: 10vh;
+    height: 2.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -30vh;
+    left: 100vh;
+    animation: fall 3.2s infinite;
+}
+
+.sprinklegreen {
+    background-color: rgb(162, 255, 185);
+    width: 10vh;
+    height: 2.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -30vh;
+    left: 30vh;
+    rotate: 7deg;
+    animation: fall 1.9s infinite;
+}
+
+.sprinklepurple {
+    background-color: rgb(199, 162, 255);
+    width: 10vh;
+    height: 2.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -30vh;
+    left: 130vh;
+    rotate: -4deg;
+    animation: fall 2.5s infinite;
+}
+
+.uno {
+    background-color: rgb(252, 115, 213);
+    width: 7vh;
+    height: 2vh;
+    border-radius:25px;
+    position: relative;
+    top: -30vh;
+    left: 90vh;
+    rotate: -2deg;
+    animation: fall 5s infinite;
+}
+
+.dos {
+    background-color: rgb(252, 193, 115);
+    width: 7vh;
+    height: 2vh;
+    border-radius:25px;
+    position: relative;
+    top: -80vh;
+    left: 150vh;
+    rotate: -2deg;
+    animation: fall 1.4s infinite;
+}
+
+.three {
+    background-color: rgb(160, 241, 214);
+    width: 7vh;
+    height: 2vh;
+    border-radius:25px;
+    position: relative;
+    top: -20vh;
+    left: 190vh;
+    rotate: 3deg;
+    animation: fall 3s infinite;
+}
+
+.cuatro {
+    background-color: rgb(200, 192, 235);
+    width: 7vh;
+    height: 2vh;
+    border-radius:25px;
+    position: relative;
+    top: -200vh;
+    left: 187vh;
+    rotate: 90deg;
+    animation: fall 3s infinite;
+}
+
+.sprinklegreentwo {
+    background-color: rgb(180, 255, 199);
+    width: 5vh;
+    height: 1.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -28vh;
+    left: 99vh;
+    rotate: -2deg;
+    animation: fall 6s infinite;
+}
+
+.anothersprinkle {
+    background-color: rgb(220, 252, 115);
+    width: 7vh;
+    height: 2vh;
+    border-radius:25px;
+    position: relative;
+    top: -40vh;
+    left: 135vh;
+    rotate: -4deg;
+    animation: fall 2s infinite;
+}
+
+.sprinkletwo {
+    background-color: rgb(255, 178, 229);
+     width: 10vh;
+    height: 2.5vh;
+    border-radius: 25px;
+    right: -154vh;
+    position: relative;
+    top: -90vh;
+    rotate: 6deg;
+    animation: fall 3s infinite;
+    
+}
+
+.sprinkleyellowtwo {
+    background-color: rgb(172, 139, 255);
+    width: 6vh;
+    height: 1.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -100vh;
+    left: 200vh;
+    rotate: 2deg;
+    animation: fall 8s infinite;
+}
+
+.dosdos {
+    background-color: rgb(252, 193, 115);
+    width: 10vh;
+    height: 2.5vh;
+    border-radius:25px;
+    position: relative;
+    top: -110vh;
+    left: 110vh;
+    rotate: -2deg;
+    animation: fall 4s infinite;
+}
+
+.icecream {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: rise 19s infinite;
+}
+.smallscoop {
+    background-color: antiquewhite;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin: auto;
+    z-index: -2;
+    
+}
+
+.cone{
+     margin-top: -80px;
+  height: 0px;
+  width: 0px;
+  border-right: 180px solid transparent;
+  border-left: 180px solid transparent;
+  border-top: 560px solid tan;
+  z-index: -1;
+}
+
+
+@keyframes fade {
+    0% {
+        background-color: violet;
+    }
+    50% {
+        background-color: rgb(223, 217, 34);
+    }
+
+    90% {
+        background-color:rgb(94, 239, 246);
+    }
+
+    100% {
+        background-color: violet;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 360deg;
+    }
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(1500px);
+    }
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(1500px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(1500px);
+    }
+}
