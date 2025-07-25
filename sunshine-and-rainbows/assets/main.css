@@ -1,0 +1,194 @@
+*{
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    background-color: skyblue;
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+.redcontainer {
+    background-color:rgb(255, 155, 225);
+    height: 20vh;
+    width: 200vh;
+    transition: background;
+    text-align: center;
+    
+p {
+    color:rgb(255, 2, 2)
+}
+a {
+    color:rgb(255, 155, 225);
+}
+}
+
+.redcontainer:hover {
+    background-color: rgb(255, 2, 2);
+}
+.orangecontainer {
+    background-color:rgb(255, 173, 86);
+    height: 20vh;
+    width: 200vh;
+    transition: background;
+    text-align: center;
+    
+p {
+    color:rgb(255, 94, 0);
+}
+
+a {
+    color:rgb(255, 173, 86);
+}
+}
+.orangecontainer:hover {
+    background-color:rgb(255, 94, 0);
+   
+}
+.yellowcontainer {
+    background-color: rgb(255, 255, 80);
+    height: 20vh;
+    width: 200vh;
+    text-align: center;
+p {
+    color:rgb(255, 200, 0)
+}
+
+a{
+    color:rgb(255, 255, 80);
+}
+}
+
+.yellowcontainer:hover {
+    background-color: rgb(255, 200, 0);
+}
+.greencontainer {
+    background-color: rgb(108, 255, 108);
+    height: 20vh;
+    width: 200vh;
+    transition: background;
+    text-align: center;
+p {
+    color: green;
+}
+
+a {
+    color:rgb(108, 255, 108);
+}
+}
+
+.greencontainer:hover {
+    background-color:green;
+}
+
+.bluecontainer {
+    background-color: rgb(94, 236, 255);
+    height: 20vh;
+    width: 200vh;
+    transition: background;
+    text-align: center;
+    
+p {
+    color:rgb(2, 2, 255)
+}
+a { 
+    color:rgb(94, 236, 255);
+}
+}
+
+.bluecontainer:hover {
+    background-color: rgb(2, 2, 255);
+}
+.purplecontainer {
+    background-color: rgb(186, 112, 255);
+    height: 20vh;
+    width: 200vh;
+    transition: background;
+    text-align: center;
+p {
+    color:rgb(121, 32, 205);
+}
+a {
+    color:rgb(186, 112, 255);
+}
+}
+
+.purplecontainer:hover {
+    background-color: rgb(121, 32, 205);
+}
+
+.bigpinkbox {
+    background-color: rgb(255, 155, 225);
+    height: 50vh;
+    width: 50vh;
+    text-align: center;
+    animation: spin 10s;
+
+    
+    
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+
+
+.bigorangebox {
+    background-color:rgb(255, 173, 86);
+    height: 50vh;
+    width: 50vh;
+    text-align: center;
+    animation: spin 10s;
+}
+
+.bigyellowbox {
+    background-color:rgb(255, 255, 80);
+    height: 50vh;
+    width: 50vh;
+    text-align: center;
+    animation: spin 10s;
+}
+
+.biggreenbox {
+    background-color:rgb(108, 255, 108);
+    height: 50vh;
+    width: 50vh;
+    text-align: center;
+    animation: spin 10s;
+}
+
+.bigbluebox {
+    background-color:rgb(94, 236, 255);
+    height: 50vh;
+    width: 50vh;
+    text-align: center;
+    animation: spin 10s;
+}
+
+.bigpurplebox {
+    background-color:rgb(186, 112, 255);
+    height: 50vh;
+    width: 50vh;
+    text-align: center;
+    animation: spin 10s;
+}
