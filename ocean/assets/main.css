@@ -1,0 +1,350 @@
+*{
+    box-sizing:border-box;
+  
+}
+
+html {
+    height: 200%;
+}
+
+
+a {
+    color: aliceblue;
+    animation: light 5s;
+    animation-iteration-count: 1;
+     animation-fill-mode:forwards;
+}
+
+.whaleshark {
+    position: relative;
+   width: 100px;
+   height: 500px;
+  
+   bottom: -20%;
+   animation: swimleft 13s infinite;
+
+   justify-content: center;
+
+}
+
+.whaletext {
+    position: absolute;
+  top: 35%;
+  left: 190%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  
+}
+ 
+
+.sand {
+    background-color: rgb(118, 95, 68);
+    max-width: 100%;
+     height: 50px;
+    width: 2000px;
+     bottom: -100%;
+    position: absolute;
+    z-index: -1;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(rgb(200, 238, 255), rgb(3, 41, 88));
+    overflow-x: hidden;
+}
+
+.herring-body {
+    position: relative;
+    top: 33px;
+    margin-left: 40px;
+    background-color:rgb(141, 152, 162);
+    width: 90px;
+    height: 25px;
+    border-radius: 50%;
+   text-align: center;
+   
+    
+   animation: swim 15s infinite;
+}
+
+
+
+.herring-tail {
+  
+  top: 30px;
+  margin-left: 120px;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:20px solid rgb(141, 152, 162); 
+  border-radius: 50%;
+
+  animation: swim 15s infinite;
+}
+
+.bigfish {
+     position: relative;
+   margin: -300px;
+    
+   animation: swim 20s infinite;
+}
+
+.bigfishbody {
+    margin-left: 40px;
+    background-color:rgb(42, 101, 156);
+    width: 220px;
+    height: 90px;
+    border-radius: 50%;
+   text-align: center;
+   
+}
+
+.bigfish-tail {
+    margin-top: -115px;
+  margin-left: 240px;
+  
+  width: 0; 
+  height: 0; 
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent; 
+  border-right:50px solid rgb(42, 101, 156); 
+  border-radius: 50%;
+
+  
+}
+.firstbubble {
+    background-color: rgb(212, 236, 248);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 50%;
+    margin-left: 200px;
+    
+    animation: float 17s infinite;
+   
+}
+
+.bubbletwo {
+    background-color: rgb(212, 236, 248);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 50%;
+    margin-left: 700px;
+    
+    animation: float 10s infinite;
+    
+}
+
+.bubblethree {
+    background-color: rgb(212, 236, 248);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 50%;
+    margin-left: 900px;
+    
+    animation: float 19s ;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+.bubblefour {
+     background-color: rgb(212, 236, 248);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 50%;
+    margin-left: 1000px;
+    
+    animation: float 11s ;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+.bubblefive {
+    background-color: rgb(212, 236, 248);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 50%;
+    margin-left: 100px;
+    
+    animation: float 15s infinite;
+
+}
+
+.bubblesix {
+    background-color: rgb(212, 236, 248);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    opacity: 50%;
+    margin-left: 750px;
+    
+    animation: float 12s infinite;
+}
+.jellyfish {
+    position: relative;
+    margin-top: 500px;
+    margin-left:700px;
+    height: 10px;
+    animation: jellyfishmove 15s infinite;
+}
+
+.seaweed {
+    width: 100%;
+    bottom: -100%;
+    position: absolute;
+}
+
+.anotherseaweed {
+    bottom: -100%;
+    position: absolute;
+    margin-left: 270px;
+    z-index: 1;
+}
+
+.seaweedthree {
+    bottom: -100%;
+    position: absolute;
+    margin-left: 1100px;
+    z-index: 1;
+}
+@keyframes swim {
+    0% {
+        transform: translateX(1700px);
+    }
+    
+    
+    100% {
+        transform: translateX(-300px);
+    }
+}
+
+@keyframes swimleft {
+    0% {
+        transform: translateX(-150px);
+
+    }
+
+    100% {
+        transform: translateX(1700px);
+    }
+}
+@keyframes float {
+    0% {
+        transform: translateY(1335px);
+        
+    }
+ 
+    
+    100% {
+        transform: translateY(-1000px);
+
+    }
+}
+
+@keyframes jellyfishmove {
+    0% {
+        transform: translateY(400px);
+    }
+
+    50% {
+         transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+@keyframes light {
+    0% {
+       opacity: 0%;
+    }
+    50% {
+        color:aliceblue;
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.herringcontainer {
+    background-color: rgb(183, 233, 255);
+    height: 100%;
+    
+}
+
+.textboxherring {
+    background-color:rgb(3, 41, 88);
+    height: 30%;
+    width: 50%;
+    margin: auto;
+    color:aliceblue;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px ;
+    
+
+}
+
+.herringpic {
+    justify-content: center;
+   
+    margin-left: 325px;
+   
+}
+.crabby {
+    position: absolute;
+    bottom: -97%;
+   
+    animation: crabwalk 6s infinite;
+}
+
+.whalecontainer {
+    background-color: rgb(183, 233, 255);
+    height: 100%;
+    
+}
+
+.textboxwhale {
+    background-color:rgb(3, 41, 88);
+    height: 30%;
+    width: 50%;
+    margin: auto;
+    color:aliceblue;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px ;
+    
+
+}
+
+.whalepic {
+    justify-content: center;
+   
+    margin-left: 530px;
+   
+}
+
+@keyframes crabwalk {
+    0% {
+        transform: translateX(10px);
+    }
+    70% {
+        transform: translateX(900px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
